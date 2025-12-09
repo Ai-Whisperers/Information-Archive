@@ -4,6 +4,28 @@ All notable changes to the Information-Archive project.
 
 ---
 
+## [2025-12-09] - Rules Expansion (71-100)
+
+### New Rule Files Created
+| File | Rules | Topics |
+|------|-------|--------|
+| `08-documentation-standards.md` | 71-80 | README, CLAUDE.md, changelog, API docs, diagrams, ADRs |
+| `09-quality-testing.md` | 81-90 | Code review, testing, CI/CD, environments, rollback, dependencies |
+| `10-communication-escalation.md` | 91-100 | Channels, status updates, blockers, incidents, feedback, improvement |
+
+### Key Rules Added
+- **Rule 72**: CLAUDE.md standards (no personal data in AI context files)
+- **Rule 81**: Code review requirements (1-2 reviewers based on criticality)
+- **Rule 84**: CI/CD pipeline requirements
+- **Rule 87**: Rollback procedures (15-minute max rollback time)
+- **Rule 93**: Blocker escalation timeline (2h → 4h → 8h)
+- **Rule 96**: Incident response severity levels
+- **Rule 100**: Continuous improvement commitment
+
+**Total rules: 70 → 100**
+
+---
+
 ## [2025-12-09] - Verification Session Updates
 
 ### Task Reassignments

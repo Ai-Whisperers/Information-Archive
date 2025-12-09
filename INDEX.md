@@ -26,6 +26,9 @@
 | [05-dashboard-integration.md](rules/05-dashboard-integration.md) | 41-50 | Ignition, filters, views, dashboard |
 | [06-repository-standards.md](rules/06-repository-standards.md) | 51-60 | repo, description, README, naming |
 | [07-activity-tracking.md](rules/07-activity-tracking.md) | 61-70 | commits, activity, priority, health |
+| [08-documentation-standards.md](rules/08-documentation-standards.md) | 71-80 | README, CLAUDE.md, changelog, API docs |
+| [09-quality-testing.md](rules/09-quality-testing.md) | 81-90 | code review, testing, CI/CD, rollback |
+| [10-communication-escalation.md](rules/10-communication-escalation.md) | 91-100 | channels, blockers, incidents, feedback |
 
 ### Planning (`/planning`)
 | Document | Purpose | Keywords |
@@ -90,8 +93,8 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Documents | 16 |
-| Rules Defined | 70 |
+| Total Documents | 19 |
+| Rules Defined | 100 |
 | Epics Active | 8 |
 | Tasks Defined | 17 |
 | Repositories Tracked | 50 |

@@ -1,6 +1,6 @@
 # Project Rules Index
 
-This folder contains the 70 rules governing the Repository Dashboard project.
+This folder contains the **100 rules** governing the Repository Dashboard project.
 
 ## Rule Categories
 
@@ -13,6 +13,9 @@ This folder contains the 70 rules governing the Repository Dashboard project.
 | [05-dashboard-integration.md](05-dashboard-integration.md) | 41-50 | Ignition views, filters, Git integration |
 | [06-repository-standards.md](06-repository-standards.md) | 51-60 | Repo descriptions, naming, README requirements |
 | [07-activity-tracking.md](07-activity-tracking.md) | 61-70 | Commit tracking, workload balancing, priority calculation |
+| [08-documentation-standards.md](08-documentation-standards.md) | 71-80 | README, CLAUDE.md, changelogs, API docs, diagrams |
+| [09-quality-testing.md](09-quality-testing.md) | 81-90 | Code review, testing, CI/CD, environments, rollback |
+| [10-communication-escalation.md](10-communication-escalation.md) | 91-100 | Channels, updates, blockers, incidents, feedback |
 
 ## Quick Reference
 
