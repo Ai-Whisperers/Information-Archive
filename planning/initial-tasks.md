@@ -27,71 +27,53 @@ Create comprehensive inventory of all 50 repositories with status, language, and
 ### TASK-002: Add Descriptions to Undocumented Repos
 **Priority:** High
 **Assignee:** @Jonathan
-**Status:** To Do
+**Status:** Done ✅
 **Effort:** 4 hours
 **Dependencies:** TASK-001
+**Completed:** 2025-12-09
 
 Add meaningful descriptions to the 28 repositories currently missing them.
 
 **Acceptance Criteria:**
-- [ ] All repos have descriptions
-- [ ] Descriptions are actionable and clear
-- [ ] Updated via GitHub API or UI
+- [x] All repos have descriptions
+- [x] Descriptions are actionable and clear
+- [x] Updated via GitHub CLI
 
-**Repos Needing Descriptions:**
-1. LangAi
-2. customer-feedback-app
-3. Taller_Ocampos
-4. Company-resarcher
-5. yt-transcript-headless
-6. Courses-Content
-7. outreach-automation
-8. AI-powered-marketing-campaign-generator
-9. feedbackScope-backend
-10. scrapped-comments
-11. cluster-template
-12. Lawfirm-website
-13. legal
-14. agentic-schemas
-15. templates-standard
-16. AI-Whisperers
-17. linkedin-content-system
-18. excel-parsing-service
-19. storage-service
-20. Negociation-Personal
-21. transcriptions
-22. n8nResearch
-23. branding-tester
-24. aws-docker-mcp
-25. courseResource
-26. AI-Whisperers-website-and-courses
-27. jira-meta-parser
-28. chatbot-rag-rbac
+All 28 repositories now have descriptions. See Rule 51-60 for auto-generation standards.
 
 ---
 
 ### TASK-003: Audit Website Repositories
 **Priority:** High
 **Assignee:** @Jonathan
-**Status:** To Do
+**Status:** Done ✅
 **Effort:** 3 hours
 **Dependencies:** None
+**Completed:** 2025-12-09
 
 Review all 4+ website repos to determine consolidation strategy.
 
 **Acceptance Criteria:**
-- [ ] Each website repo reviewed for content
-- [ ] Differences documented
-- [ ] Recommendation for consolidation written
-- [ ] Migration plan drafted
+- [x] Each website repo reviewed for content
+- [x] Differences documented
+- [x] Recommendation for consolidation written
+- [x] Migration plan drafted
 
-**Subtasks:**
-- [ ] Clone and review AI-Whisperers
-- [ ] Clone and review ai-whisperers-portfolio-website
-- [ ] Clone and review AI-Whisperers-Website
-- [ ] Clone and review AI-Whisperers-website-and-courses
-- [ ] Document findings
-- [ ] Propose single architecture
+**Findings Summary:**
+
+| Repo | Created | Last Push | Status | Purpose |
+|------|---------|-----------|--------|---------|
+| AI-Whisperers | Aug 12 | Nov 12 | Semi-Active | Org main repo + internal tools |
+| AI-Whisperers-Website | Aug 14 | Sep 16 | Dormant | Original website (Next.js 15, AI SDK) |
+| AI-Whisperers-website-and-courses | Sep 4 | Oct 14 | Dormant | Combined site + courses |
+| ai-whisperers-portfolio-website | Oct 1 | Dec 1 | **Active** | Current portfolio website |
+
+**Recommendation:**
+1. **KEEP**: `ai-whisperers-portfolio-website` as PRIMARY website
+2. **ARCHIVE**: `AI-Whisperers-website-and-courses` (superseded)
+3. **MIGRATE**: Useful features from `AI-Whisperers-Website` (AI SDK, multilingual)
+4. **RENAME**: `AI-Whisperers` to `internal-tools` for clarity
+5. **CLEANUP**: Remove personal notes from AI-Whisperers-Website/CLAUDE.md
 
 ---
 
@@ -235,13 +217,63 @@ Create comprehensive infrastructure documentation from scattered configs.
 
 ---
 
+### TASK-011: Consolidate Website Repositories
+**Priority:** High
+**Assignee:** @Jonathan
+**Status:** To Do
+**Effort:** 6 hours
+**Dependencies:** TASK-003
+
+Execute the website consolidation plan from TASK-003 findings.
+
+**Action Items:**
+1. Archive `AI-Whisperers-website-and-courses`
+2. Migrate AI SDK + multilingual features from `AI-Whisperers-Website` to `ai-whisperers-portfolio-website`
+3. Rename `AI-Whisperers` repo to `internal-tools`
+4. Clean up CLAUDE.md (remove personal notes)
+5. Update all cross-references and documentation
+
+**Subtasks:**
+- [ ] Create migration branch in portfolio website
+- [ ] Copy AI SDK integration code (@ai-sdk/anthropic, @ai-sdk/openai)
+- [ ] Port multilingual implementation (MULTILINGUAL_IMPLEMENTATION.md)
+- [ ] Archive AI-Whisperers-website-and-courses via GitHub
+- [ ] Rename AI-Whisperers repo
+- [ ] Delete/replace CLAUDE.md with proper AI instructions
+- [ ] Update inventory and epic docs
+
+**Acceptance Criteria:**
+- [ ] Single active website repository
+- [ ] AI features preserved
+- [ ] Archived repos marked appropriately
+- [ ] Documentation updated
+
+---
+
+### TASK-012: Create Website Architecture Document
+**Priority:** Medium
+**Assignee:** @Jonathan
+**Status:** To Do
+**Effort:** 2 hours
+**Dependencies:** TASK-011
+
+Document the consolidated website architecture for future development.
+
+**Acceptance Criteria:**
+- [ ] Tech stack documented (Next.js, React, Tailwind, etc.)
+- [ ] Feature inventory (AI chat, multilingual, etc.)
+- [ ] Deployment process documented
+- [ ] Development setup guide
+
+---
+
 ## Task Summary
 
 | ID | Task | Priority | Assignee | Status | Effort |
 |----|------|----------|----------|--------|--------|
-| TASK-001 | Document Repository Inventory | High | @Kyrian | Done | 2h |
-| TASK-002 | Add Repo Descriptions | High | @Jonathan | To Do | 4h |
-| TASK-003 | Audit Website Repos | High | @Jonathan | To Do | 3h |
+| TASK-001 | Document Repository Inventory | High | @Kyrian | Done ✅ | 2h |
+| TASK-002 | Add Repo Descriptions | High | @Jonathan | Done ✅ | 4h |
+| TASK-003 | Audit Website Repos | High | @Jonathan | Done ✅ | 3h |
 | TASK-004 | Define Marketing Stories | High | @Kyrian | To Do | 2h |
 | TASK-005 | Set Up Ignition Project | Medium | @Jonathan | To Do | 4h |
 | TASK-006 | Archive Dormant Repos | Medium | @Jonathan | To Do | 1h |
@@ -249,13 +281,15 @@ Create comprehensive infrastructure documentation from scattered configs.
 | TASK-008 | Map Marketing Dependencies | High | @Ivan | To Do | 3h |
 | TASK-009 | Review Comment-Extractor | High | @Ivan | To Do | 2h |
 | TASK-010 | Document Infrastructure | Medium | @Jonathan | To Do | 3h |
+| TASK-011 | Consolidate Website Repos | High | @Jonathan | To Do | 6h |
+| TASK-012 | Website Architecture Doc | Medium | @Jonathan | To Do | 2h |
 
 ### Workload Distribution
 
-| Assignee | Tasks | Total Effort |
-|----------|-------|--------------|
-| @Kyrian | 2 | 4 hours |
-| @Jonathan | 5 | 15 hours |
-| @Ivan | 3 | 7 hours |
+| Assignee | Tasks | Total Effort | Completed |
+|----------|-------|--------------|-----------|
+| @Kyrian | 2 | 4 hours | 1 (2h) |
+| @Jonathan | 7 | 23 hours | 2 (7h) |
+| @Ivan | 3 | 7 hours | 0 |
 
-> Note: @Jonathan has highest initial load for infrastructure setup. Consider redistributing after Phase 1.
+> Note: @Jonathan has highest load. TASK-011 (website consolidation) is highest priority next step.
