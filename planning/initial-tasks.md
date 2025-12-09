@@ -111,25 +111,26 @@ Initialize Ignition project with dashboard views for repository tracking.
 
 ---
 
-### TASK-006: Archive Dormant Repositories
+### TASK-006: Polish Dormant Repositories
 **Priority:** Medium
-**Assignee:** @Jonathan
+**Assignee:** @Kyrian
 **Status:** To Do
-**Effort:** 1 hour
+**Effort:** 2 hours
 **Dependencies:** TASK-001
 
-Review and archive truly dormant repositories that have no future use.
+Review dormant repositories and create improvement plans (no archiving - all repos have value).
 
-**Candidates for Review:**
-- demo-repository (GitHub demo, likely archivable)
-- Call-Recorder (no activity since Sept)
-- WPG-Amenities (client project - check status)
+**Repos to Review:**
+- demo-repository - identify use case
+- Call-Recorder - document features, plan updates
+- WPG-Amenities - waiting for client pictures
+- Lawfirm-website - **Dropped** (client declined price)
 
 **Acceptance Criteria:**
 - [ ] Each dormant repo reviewed
-- [ ] Decision documented (archive/activate/keep)
-- [ ] Archived repos marked in GitHub
-- [ ] Reason logged in inventory
+- [ ] Improvement plan documented per repo
+- [ ] Priority for reactivation assigned
+- [ ] Status updated in inventory
 
 ---
 
@@ -252,16 +253,18 @@ Execute the website consolidation plan from TASK-003 findings.
 
 ### TASK-012: Create Website Architecture Document
 **Priority:** Medium
-**Assignee:** @Jonathan
+**Assignee:** @Kyrian
 **Status:** To Do
 **Effort:** 2 hours
 **Dependencies:** TASK-011
 
 Document the consolidated website architecture for future development.
 
+**Note:** Website will merge portfolio + courses into one unified site with logical navigation structure.
+
 **Acceptance Criteria:**
 - [ ] Tech stack documented (Next.js, React, Tailwind, etc.)
-- [ ] Feature inventory (AI chat, multilingual, etc.)
+- [ ] Feature inventory (AI chat, multilingual, courses section)
 - [ ] Deployment process documented
 - [ ] Development setup guide
 
@@ -368,13 +371,13 @@ Document risks and mitigation strategies for Phase 1 epics.
 | TASK-003 | Audit Website Repos | High | @Jonathan | Done ✅ | 3h |
 | TASK-004 | Define Marketing Stories | High | @Kyrian | To Do | 2h |
 | TASK-005 | Set Up Ignition Project | Medium | @Jonathan | To Do | 4h |
-| TASK-006 | Archive Dormant Repos | Medium | @Jonathan | To Do | 1h |
+| TASK-006 | Polish Dormant Repos | Medium | @Kyrian | To Do | 2h |
 | TASK-007 | Create README Templates | Medium | @Ivan | To Do | 2h |
 | TASK-008 | Map Marketing Dependencies | High | @Ivan | To Do | 3h |
 | TASK-009 | Review Comment-Extractor | High | @Ivan | To Do | 2h |
 | TASK-010 | Document Infrastructure | Medium | @Jonathan | To Do | 3h |
 | TASK-011 | Consolidate Website Repos | High | @Jonathan | To Do | 6h |
-| TASK-012 | Website Architecture Doc | Medium | @Jonathan | To Do | 2h |
+| TASK-012 | Website Architecture Doc | Medium | @Kyrian | To Do | 2h |
 | TASK-013 | Define Stories for Phase 1 Epics | High | @Kyrian | To Do | 4h |
 | TASK-014 | Create Project Roadmap | Medium | @Kyrian | To Do | 2h |
 | TASK-015 | Set Up GitHub Actions | Medium | @Jonathan | To Do | 3h |
@@ -385,8 +388,8 @@ Document risks and mitigation strategies for Phase 1 epics.
 
 | Assignee | Tasks | Total Effort | Completed |
 |----------|-------|--------------|-----------|
-| @Kyrian | 5 | 12 hours | 1 (2h) |
-| @Jonathan | 8 | 26 hours | 2 (7h) |
+| @Kyrian | 7 | 16 hours | 1 (2h) |
+| @Jonathan | 6 | 22 hours | 2 (7h) |
 | @Ivan | 4 | 9 hours | 0 |
 
 ---
@@ -397,22 +400,21 @@ Per Rule 67, tasks are scored: `(Client×3) + (Blocker×2) + (Activity×1)`
 
 | Task | Client | Blocker | Activity | Score | **Rank** |
 |------|--------|---------|----------|-------|----------|
-| Taller_Ocampos work (ongoing) | 3 | 0 | 1 | **4** | 1 |
-| TASK-011 Website Consolidation | 0 | 2 | 1 | **3** | 2 |
-| TASK-008 Map Marketing Deps | 0 | 2 | 1 | **3** | 2 |
-| TASK-009 Comment-Extractor | 0 | 2 | 0.5 | **2.5** | 4 |
-| TASK-004 Marketing Stories | 0 | 0 | 1 | **1** | 5 |
+| Comment Analyzer (current) | 0 | 2 | 1 | **3** | 1 |
+| TASK-011 Website Consolidation | 0 | 2 | 1 | **3** | 1 |
+| TASK-008 Map Marketing Deps | 0 | 2 | 1 | **3** | 1 |
+| Taller_Ocampos (product research) | 0 | 0 | 1 | **1** | 4 |
+| TASK-004 Marketing Stories | 0 | 0 | 1 | **1** | 4 |
 | TASK-010 Infrastructure Doc | 0 | 0 | 0.5 | **0.5** | 6 |
 
 ### Current Active Projects by Owner
 
-**@Jonathan** (6 projects - at 60% limit per Rule 63):
-1. 🟢 Taller_Ocampos - Client, active
+**@Jonathan** (5 projects - within 50% limit per Rule 63):
+1. 🟢 Comment-Analyzer - **Currently working on**
 2. 🟢 yt-transcript-headless - Product, active
 3. 🟡 agentic-schemas - Internal, recent
-4. 🟠 Company-Information - Infrastructure
-5. 🟠 work-hours-automated-reports - Internal tool
-6. 🔴 WPG-Amenities - Client, needs status check
+4. 🟠 Taller_Ocampos - Product research pending
+5. 🟠 WPG-Amenities - Client, waiting for pictures
 
 **@Kyrian** (2 projects):
 1. 🟢 marketing-strategy - Business dev, active
@@ -424,8 +426,8 @@ Per Rule 67, tasks are scored: `(Client×3) + (Blocker×2) + (Activity×1)`
 
 ### Recommended Immediate Priorities
 
-1. **@Jonathan**: Complete Taller_Ocampos (client), then TASK-011 (unblocks maintenance)
+1. **@Jonathan**: Complete Comment-Analyzer, then TASK-011 Website Consolidation
 2. **@Kyrian**: TASK-004 Define Marketing Stories (enables pipeline)
-3. **@Ivan**: TASK-009 Comment-Extractor review (enables feedback platform)
+3. **@Ivan**: TASK-008 Map Marketing Dependencies (enables automation)
 
 See [team-activity-analysis.md](team-activity-analysis.md) for full analysis.
