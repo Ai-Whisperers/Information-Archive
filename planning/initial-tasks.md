@@ -267,6 +267,98 @@ Document the consolidated website architecture for future development.
 
 ---
 
+## Phase 2 Tasks - Gap Analysis Actions
+
+### TASK-013: Define Stories for Phase 1 Epics
+**Priority:** High
+**Assignee:** @Kyrian
+**Status:** To Do
+**Effort:** 4 hours
+**Dependencies:** None
+**Epic:** EPIC-001, EPIC-002, EPIC-003
+
+Break down Phase 1 epics (Website, Marketing, Feedback) into user stories.
+
+**Acceptance Criteria:**
+- [ ] 5-8 stories per epic defined
+- [ ] Each story follows "As a... I want... so that..." format (Rule 12)
+- [ ] Acceptance criteria for each story (Rule 20)
+- [ ] Stories added to planning/stories/ folder
+
+---
+
+### TASK-014: Create Project Roadmap
+**Priority:** Medium
+**Assignee:** @Kyrian
+**Status:** To Do
+**Effort:** 2 hours
+**Dependencies:** TASK-013
+
+Create visual roadmap with quarterly milestones and epic timelines.
+
+**Acceptance Criteria:**
+- [ ] Mermaid Gantt chart created
+- [ ] All 8 epics mapped to timeline
+- [ ] Dependencies visualized
+- [ ] Added to planning/roadmap.md
+
+---
+
+### TASK-015: Set Up GitHub Actions
+**Priority:** Medium
+**Assignee:** @Jonathan
+**Status:** To Do
+**Effort:** 3 hours
+**Dependencies:** None
+
+Add CI/CD workflows for documentation quality.
+
+**Workflows Needed:**
+- [ ] Markdown linting
+- [ ] Link checking
+- [ ] Auto table of contents generation
+
+**Acceptance Criteria:**
+- [ ] .github/workflows/ created
+- [ ] At least 2 workflows functional
+- [ ] Badge added to README
+
+---
+
+### TASK-016: Create Repository Health Dashboard
+**Priority:** Medium
+**Assignee:** @Ivan
+**Status:** To Do
+**Effort:** 2 hours
+**Dependencies:** None
+
+Document current health status per Rule 70 indicators.
+
+**Acceptance Criteria:**
+- [ ] Health status per repo documented
+- [ ] Added to inventory/health-status.md
+- [ ] Critical repos flagged
+- [ ] Update process documented
+
+---
+
+### TASK-017: Create Risk Register
+**Priority:** Low
+**Assignee:** @Kyrian
+**Status:** To Do
+**Effort:** 2 hours
+**Dependencies:** TASK-013
+
+Document risks and mitigation strategies for Phase 1 epics.
+
+**Acceptance Criteria:**
+- [ ] Risk identification per epic
+- [ ] Impact assessment (High/Medium/Low)
+- [ ] Mitigation strategies documented
+- [ ] Added to planning/risk-register.md
+
+---
+
 ## Task Summary
 
 | ID | Task | Priority | Assignee | Status | Effort |
@@ -283,14 +375,19 @@ Document the consolidated website architecture for future development.
 | TASK-010 | Document Infrastructure | Medium | @Jonathan | To Do | 3h |
 | TASK-011 | Consolidate Website Repos | High | @Jonathan | To Do | 6h |
 | TASK-012 | Website Architecture Doc | Medium | @Jonathan | To Do | 2h |
+| TASK-013 | Define Stories for Phase 1 Epics | High | @Kyrian | To Do | 4h |
+| TASK-014 | Create Project Roadmap | Medium | @Kyrian | To Do | 2h |
+| TASK-015 | Set Up GitHub Actions | Medium | @Jonathan | To Do | 3h |
+| TASK-016 | Create Repository Health Dashboard | Medium | @Ivan | To Do | 2h |
+| TASK-017 | Create Risk Register | Low | @Kyrian | To Do | 2h |
 
 ### Workload Distribution
 
 | Assignee | Tasks | Total Effort | Completed |
 |----------|-------|--------------|-----------|
-| @Kyrian | 2 | 4 hours | 1 (2h) |
-| @Jonathan | 7 | 23 hours | 2 (7h) |
-| @Ivan | 3 | 7 hours | 0 |
+| @Kyrian | 5 | 12 hours | 1 (2h) |
+| @Jonathan | 8 | 26 hours | 2 (7h) |
+| @Ivan | 4 | 9 hours | 0 |
 
 ---
 
