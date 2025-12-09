@@ -11,6 +11,7 @@
 | Document | Purpose | Keywords |
 |----------|---------|----------|
 | [README.md](README.md) | Project overview and setup | overview, setup, team, roles |
+| [CHANGELOG.md](CHANGELOG.md) | All changes and updates | changes, updates, history |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute | git, commits, PRs, reviews |
 | [INDEX.md](INDEX.md) | This index | navigation, search, catalog |
 
@@ -89,8 +90,8 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Documents | 15 |
+| Total Documents | 16 |
 | Rules Defined | 70 |
 | Epics Active | 8 |
-| Tasks Defined | 12 |
+| Tasks Defined | 17 |
 | Repositories Tracked | 50 |
