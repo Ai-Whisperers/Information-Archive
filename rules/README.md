@@ -1,6 +1,6 @@
 # Project Rules Index
 
-This folder contains the 60 rules governing the Repository Dashboard project.
+This folder contains the 70 rules governing the Repository Dashboard project.
 
 ## Rule Categories
 
@@ -12,6 +12,7 @@ This folder contains the 60 rules governing the Repository Dashboard project.
 | [04-workflow-cadence.md](04-workflow-cadence.md) | 31-40 | Standups, planning, reviews, retrospectives |
 | [05-dashboard-integration.md](05-dashboard-integration.md) | 41-50 | Ignition views, filters, Git integration |
 | [06-repository-standards.md](06-repository-standards.md) | 51-60 | Repo descriptions, naming, README requirements |
+| [07-activity-tracking.md](07-activity-tracking.md) | 61-70 | Commit tracking, workload balancing, priority calculation |
 
 ## Quick Reference
 

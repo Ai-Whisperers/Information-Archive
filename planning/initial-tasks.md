@@ -292,4 +292,43 @@ Document the consolidated website architecture for future development.
 | @Jonathan | 7 | 23 hours | 2 (7h) |
 | @Ivan | 3 | 7 hours | 0 |
 
-> Note: @Jonathan has highest load. TASK-011 (website consolidation) is highest priority next step.
+---
+
+## Priority Matrix (Based on Activity Analysis)
+
+Per Rule 67, tasks are scored: `(Client×3) + (Blocker×2) + (Activity×1)`
+
+| Task | Client | Blocker | Activity | Score | **Rank** |
+|------|--------|---------|----------|-------|----------|
+| Taller_Ocampos work (ongoing) | 3 | 0 | 1 | **4** | 1 |
+| TASK-011 Website Consolidation | 0 | 2 | 1 | **3** | 2 |
+| TASK-008 Map Marketing Deps | 0 | 2 | 1 | **3** | 2 |
+| TASK-009 Comment-Extractor | 0 | 2 | 0.5 | **2.5** | 4 |
+| TASK-004 Marketing Stories | 0 | 0 | 1 | **1** | 5 |
+| TASK-010 Infrastructure Doc | 0 | 0 | 0.5 | **0.5** | 6 |
+
+### Current Active Projects by Owner
+
+**@Jonathan** (6 projects - at 60% limit per Rule 63):
+1. 🟢 Taller_Ocampos - Client, active
+2. 🟢 yt-transcript-headless - Product, active
+3. 🟡 agentic-schemas - Internal, recent
+4. 🟠 Company-Information - Infrastructure
+5. 🟠 work-hours-automated-reports - Internal tool
+6. 🔴 WPG-Amenities - Client, needs status check
+
+**@Kyrian** (2 projects):
+1. 🟢 marketing-strategy - Business dev, active
+2. 🟢 Courses-Content - Revenue, active
+
+**@Ivan** (1 visible + private):
+1. 🟡 team-tasks - Internal, recent
+2. (Private repos not visible)
+
+### Recommended Immediate Priorities
+
+1. **@Jonathan**: Complete Taller_Ocampos (client), then TASK-011 (unblocks maintenance)
+2. **@Kyrian**: TASK-004 Define Marketing Stories (enables pipeline)
+3. **@Ivan**: TASK-009 Comment-Extractor review (enables feedback platform)
+
+See [team-activity-analysis.md](team-activity-analysis.md) for full analysis.
